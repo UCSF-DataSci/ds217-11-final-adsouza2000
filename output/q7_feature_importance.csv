@@ -1,0 +1,17 @@
+feature,importance
+Total Rain,0.19525482
+Barometric Pressure,0.1383203
+Solar Radiation,0.10198026
+Station Name_Foster Weather Station,0.07892237
+wind_humidity_interaction,0.07745707
+Precipitation Type,0.06977897
+Station Name_Oak Street Weather Station,0.06742186
+Wind Direction,0.0659774
+Wind Speed,0.06429364
+solar_radiation_normalized,0.05490428
+Humidity,0.031035164
+pressure_change,0.02186056
+Maximum Wind Speed,0.0144058615
+Interval Rain,0.0074721393
+is_raining,0.0059388196
+Rain Intensity,0.00497645

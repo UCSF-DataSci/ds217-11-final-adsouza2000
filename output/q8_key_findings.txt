@@ -1,0 +1,23 @@
+KEY FINDINGS SUMMARY
+===================
+
+MODEL PERFORMANCE:
+- Best performing model on the test set: XGBoost (R² ≈ 0.398, RMSE ≈ 7.91, MAE ≈ 6.08).
+- Linear Regression captured only part of the variability in air temperature and had the weakest test performance.
+- Random Forest fit the training data extremely well but showed clear overfitting (very high train R² with noticeably lower test R²).
+
+FEATURE IMPORTANCE (XGBoost):
+- Total Rain, Barometric Pressure, and Solar Radiation were the most important predictors of air temperature.
+- Station location indicators (e.g., Foster and Oak Street Weather Stations) also contributed substantially, suggesting local microclimate effects.
+- Interaction terms such as wind–humidity interaction and normalized solar radiation further improved performance, highlighting combined effects of wind, moisture, and radiation.
+
+TEMPORAL PATTERNS (from earlier phases):
+- Air temperature showed clear seasonal patterns: warmer values in mid-year months and cooler values in winter months.
+- Daily patterns were evident, with higher temperatures during daytime hours and lower temperatures overnight.
+- Humidity and precipitation-related variables tended to increase during cooler, wetter periods.
+
+DATA QUALITY SUMMARY:
+- The cleaned dataset contained approximately 196,000 sensor readings after preprocessing.
+- Missing values were primarily concentrated in rain-related and heading fields and were handled using time-series appropriate methods (forward-fill/backward-fill and occasional median imputation).
+- A small number of extreme outliers were capped using an IQR-based approach, and duplicate records were not a major issue.
+- Final modeling matrices contained no missing values and only predictors (no target-derived features), minimizing the risk of data leakage.

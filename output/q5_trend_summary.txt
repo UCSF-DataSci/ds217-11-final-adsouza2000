@@ -1,0 +1,25 @@
+KEY PATTERNS IDENTIFIED
+======================
+
+TEMPORAL TRENDS (MONTHLY):
+- Air Temperature: Monthly average ranges from -5.04 to 25.25
+- Humidity: Monthly average ranges from 51.06 to 81.00
+- Wind Speed: Monthly average ranges from 1.79 to 6.15
+- Barometric Pressure: Monthly average ranges from 987.75 to 1000.16
+- Solar Radiation: Monthly average ranges from 21.00 to 187.86
+- Total Rain: Monthly average ranges from 3.85 to 577.36
+
+LOWEST MONTHS IDENTIFIED:
+- Lowest average Air Temperature occurs in month 1 with mean value -2.55
+- Lowest average Humidity occurs in month 11 with mean value 62.93
+
+DAILY (DIURNAL) PATTERNS:
+- Air Temperature: Peak at hour 16, minimum at hour 6
+- Humidity: Peak at hour 6, minimum at hour 16
+- Wind Speed: Peak at hour 13, minimum at hour 0
+
+STRONG CORRELATIONS (|r| > 0.20):
+- Air Temperature vs Wind Speed: -0.228
+- Barometric Pressure vs Air Temperature: -0.244
+- Solar Radiation vs Air Temperature: 0.234
+- Total Rain vs Air Temperature: 0.422

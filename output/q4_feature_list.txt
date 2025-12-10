@@ -1,0 +1,10 @@
+wind_speed_squared
+is_raining
+pressure_change
+solar_radiation_normalized
+wind_humidity_interaction
+wind_speed_rolling_7h
+humidity_rolling_7h
+pressure_rolling_7h
+wind_speed_rolling_24h
+humidity_rolling_24h

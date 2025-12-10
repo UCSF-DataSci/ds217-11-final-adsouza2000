@@ -1,0 +1,29 @@
+DATA CLEANING REPORT
+====================
+
+Rows before cleaning: 196627
+
+Missing Data Handling:
+- Wet Bulb Temperature, Rain Intensity, Total Rain, Precipitation Type, Heading
+  Method: Forward-fill (time series appropriate)
+  Reason: High non-random sensor-based missingness
+
+- Air Temperature, Barometric Pressure
+  Method: Row-wise removal for remaining NaNs
+  Reason: Missing rate < 0.1%
+
+Outlier Handling (IQR Method, 3×IQR):
+- Air Temperature: capped at [-47.30, 73.10], outliers capped = 0
+- Humidity: capped at [-12.00, 149.00], outliers capped = 0
+- Wind Speed: capped at [-3.50, 8.40], outliers capped = 2573
+- Maximum Wind Speed: capped at [-10.80, 17.20], outliers capped = 220
+- Barometric Pressure: capped at [965.00, 1023.80], outliers capped = 106
+- Solar Radiation: capped at [-390.00, 520.00], outliers capped = 17387
+
+Duplicates Removed: 0
+
+Data Type Conversions:
+- Measurement Timestamp → datetime64[ns]
+- Meteorological variables → numeric
+
+Rows after cleaning: 196479
